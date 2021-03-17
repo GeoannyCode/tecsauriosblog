@@ -1,0 +1,148 @@
+.main,
+.sidebar{
+    .titulo-seccion{
+        h3{
+            font-size: 1.5em;
+            line-height: 1.5em;
+            font-weight: normal;
+            color: $texto;
+            padding-bottom: 0.62em;
+            border-bottom: 3px solid $verde_primario;
+        }
+    }
+}
+
+.main{
+    .titulo-seccion{
+        >div{
+            padding: 0;
+        }
+    }
+    .single-post{
+        .categorias{
+            margin-bottom: 1.5em;
+        }
+    }
+    .posts{
+        margin-bottom: 1.87em;
+        .contenedor{
+            background: whitesmoke;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+            margin-bottom: 25px;
+            .thumb{
+                img{
+                    width: 100%;
+                    vertical-align: top;
+                    height: auto;
+                }
+            }
+            .info{
+                padding: 1em;
+                .titulo{
+                    line-height: 1.5em;
+                    margin-bottom: 0em;
+                    font-size: 1.6em;
+                    font-weight: 500;
+                    a{
+                        color: $verde_segundario;
+                    }
+                }
+                .fecha{
+                    color: gray;
+                    font-size: 0.90em;
+                    margin-bottom: 1em;
+                }
+                .extracto{
+                    color: $texto;
+                    font-size: 1em;
+                    height: 8.125em;
+                    max-height: 8.125em;
+                    line-height: 1.75em;
+                    margin-bottom: 1.25em;
+                    overflow: hidden;
+                    &:hover{
+                        overflow: auto;
+                    }
+                }
+            }
+            .categorias{
+                ul{
+                    list-style: none;
+                    li{
+                        display: inline-block;
+                    }
+                }
+                a{
+                    font-size: 1em;
+                    color: $verde_segundario;
+                    text-decoration: none;
+                    margin: 0.5em;
+                    &:hover{
+                        color: $texto;
+                        text-decoration:underline;
+                    }
+                }
+            }
+        }
+    }
+    .paginacion{
+        ul{
+            list-style: none;
+            overflow: hidden;
+            margin-bottom: 1.25em;
+            font-size: 1em;
+            li{
+                float: left;
+                color: $texto;
+                margin-right: 0.5em;
+                font-size: 1.12em;
+                line-height: 1.12em;
+                &.disabled{
+                    padding: 0.62em 0.93em;
+                    font-size: 1.12em;
+                    line-height: 1.12em;
+                    background: $verde_segundario;
+                    color: aliceblue;
+                    border-radius: 3px;
+                }
+                a{
+                    line-height: 1.12em;
+                    display: inline-block;
+                    padding: 0.62em 0.93em;
+                    color: $texto;
+                    background: $verde_primario;
+                    border-radius: 3px;
+                    &:hover{
+                        background: $verde_segundario;
+                        color:aliceblue;
+                    }
+                    &.disabled{
+                        background: $verde_segundario;
+                        color: aliceblue;
+                    }
+                }
+            }
+        }
+    }
+        .wp-pagenavi{
+            margin-bottom: 1.25em;
+            .pages,
+            span{
+                background: $verde_segundario;
+                color: whitesmoke;
+            }
+            a{
+                font-size: 1em;
+                    color: $verde_segundario;
+                    text-decoration: none;
+                    margin: 0.5em;
+                    &:hover{
+                        color: $texto;
+                        text-decoration:underline;
+                    }
+            }
+        }
+
+}

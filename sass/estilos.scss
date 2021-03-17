@@ -1,0 +1,37 @@
+$fondo: #cee6b4;
+$fondo2: #9ecca4;
+$verde_oscuro: #1f441e;
+$verde_primario: #00af91;
+$verde_segundario: #007965;
+$violeta: #9b3675;
+$texto: #222831;
+
+body{
+    background: $fondo;
+}
+
+.ad{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+a{
+    color: $verde_segundario;
+    text-decoration: none;
+}
+
+.icono_header{
+    width: 50px;   
+}
+
+.titulo_icono{
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+@import "components/header";
+@import "components/main";
+@import "components/sidebar";
+@import "components/footer";
+@import "components/mediaqueries";
